@@ -5,6 +5,6 @@ const maxRate = 100;
 const rateStep = 10;
 
 for (let dollars = 10; dollars <= maxRate; dollars += rateStep) {
-    let hryvnias = dollars * exchangeRate;
-    console.log(`${dollars} $ = ${hryvnias} UAH`);
+    const uah = dollars * exchangeRate;
+    console.log(`${dollars} $ = ${uah} UAH`);
 }
