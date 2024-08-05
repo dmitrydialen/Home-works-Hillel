@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="contactForm">
+        <h1>We would like to help you</h1>
+        <div class="row">
+            <input type="text" id="name" name="name" placeholder="Name">
+            <div id="nameError" class="error"></div>
+        </div>
+
+        <div class="row">
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+            <div id="messageError" class="error"></div>
+        </div>
+
+        <h2>How to answer you?</h2>
+        <div class="row">
+            <input type="tel" id="phone" name="phone" placeholder="Phone number">
+            <div id="phoneError" class="error"></div>
+        </div>
+
+        <div class="row">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <div id="emailError" class="error"></div>
+        </div>
+        <button type="submit">Send message</button>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
