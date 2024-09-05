@@ -30,7 +30,7 @@
       const currentDate = new Date();
       const utcTimeInMillis = currentDate.getTime() + currentDate.getTimezoneOffset() * 60000;
       const localTimeInMillis = utcTimeInMillis + timezoneOffsetInSeconds * 1000;
-      const localDate = new Date(localTimeInMillis);
+      const localDate = new Date(localTimeInMillis);  
 
       const hours = String(localDate.getHours()).padStart(2, '0');
       const minutes = String(localDate.getMinutes()).padStart(2, '0');
