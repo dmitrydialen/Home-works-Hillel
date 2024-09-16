@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.swiper{
+    width: 100%;
+    height: 400px;
+
+    .swiper-slide{
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        text-align: center;
+        transition: .3s opacity;
+        transform: translate3d(0, 0, 0);
+        z-index: 10;
+        bottom: 0;
+        top: auto !important;
+        right: 50% !important;
+        display: flex;
+        gap: 20px;
+    }
+}
